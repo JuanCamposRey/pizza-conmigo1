@@ -21,7 +21,7 @@ import { PersonalizarPizzasModule } from './personalizar-pizzas/personalizar-piz
       username: process.env.MYSQL_USER,
       password: process.env.MYSQL_PASSWORD,
       database: process.env.MYSQL_DB,
-      autoLoadEntities: true,
+      entities:[__dirname + '/**/*.entity{.ts,.js}'],
       synchronize: true,
     }),
     PedidosModule,
