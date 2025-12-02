@@ -16,7 +16,7 @@ import { PersonalizarPizzasModule } from './personalizar-pizzas/personalizar-piz
   imports: [
     TypeOrmModule.forRoot({
       type: 'mysql', // o postgres, sqlite, etc.
-      host: 'process.env.MYSQL_HOST',
+      host: process.env.MYSQL_HOST,
       port: parseInt(process.env.MYSQL_PORT ?? "3306"),
       username: process.env.MYSQL_USER,
       password: process.env.MYSQL_PASSWORD,
