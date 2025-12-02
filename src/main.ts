@@ -13,7 +13,7 @@ async function bootstrap() {
     origin: ["https://pizza-conmigo1.onrender.com",
       "http://localhost:3000"], 
       methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-      credentials:false,
+      credentials:true,
   });
   app.useGlobalPipes(
     new ValidationPipe({
