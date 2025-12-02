@@ -15,14 +15,14 @@ import { PersonalizarPizzasModule } from './personalizar-pizzas/personalizar-piz
 @Module({
   imports: [
     TypeOrmModule.forRoot({
-      type: 'mysql', // o postgres, sqlite, etc.
-      host: process.env.MYSQL_HOST,
-      port: parseInt(process.env.MYSQL_PORT ?? "3306"),
-      username: process.env.MYSQL_USER,
-      password: process.env.MYSQL_PASSWORD,
-      database: process.env.MYSQL_DB,
-      entities:[__dirname + '/**/*.entity{.ts,.js}'],
-      synchronize: true,
+      "type": 'mysql', // o postgres, sqlite, etc.
+      "host": process.env.MYSQL_HOST,
+      "port": parseInt(process.env.MYSQL_PORT ?? "3306"),
+      "username": process.env.MYSQL_USER,
+      "password": process.env.MYSQL_PASSWORD,
+      "database": process.env.MYSQL_DB,
+      "entities":[__dirname + '/**/*.entity{.ts,.js}'],
+      "synchronize": true,
     }),
     PedidosModule,
     PagosModule,
