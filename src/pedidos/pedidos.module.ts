@@ -1,12 +1,12 @@
 import { forwardRef, Module } from '@nestjs/common';
 import { PedidosService } from './pedidos.service';
 import { PedidosController } from './pedidos.controller';
-import { Cliente } from 'src/clientes/entities/cliente.entity';
-import { ClientesModule } from 'src/clientes/clientes.module';
+import { Cliente } from '../clientes/entities/cliente.entity';
+import { ClientesModule } from '../clientes/clientes.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { Pedido } from './entities/pedido.entity';
-import { Pago } from 'src/pagos/entities/pago.entity';
-import { DetallePedido } from 'src/detalle_pedido/entities/detalle_pedido.entity';
+import { Pago } from '../pagos/entities/pago.entity';
+import { DetallePedido } from '../detalle_pedido/entities/detalle_pedido.entity';
 //las tengo que registrar. traer entidad a module.
 @Module({
   imports: [

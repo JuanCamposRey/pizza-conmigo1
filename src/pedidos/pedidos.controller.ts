@@ -10,7 +10,7 @@ import {
 import { PedidosService } from './pedidos.service';
 import { CreatePedidoDto } from './dto/create-pedido.dto';
 import { UpdatePedidoDto } from './dto/update-pedido.dto';
-import { CreateClienteDto } from 'src/clientes/dto/create-cliente.dto';
+import { CreateClienteDto } from '../clientes/dto/create-cliente.dto';
 //hacer
 @Controller('pedidos')
 export class PedidosController {

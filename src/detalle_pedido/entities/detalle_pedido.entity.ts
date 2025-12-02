@@ -1,5 +1,5 @@
-import { Pedido } from 'src/pedidos/entities/pedido.entity';
-import { Pizza } from 'src/pizzas/entities/pizza.entity';
+import { Pedido } from '../../pedidos/entities/pedido.entity';
+import { Pizza } from '../../pizzas/entities/pizza.entity';
 import {
   Entity,
   JoinColumn,

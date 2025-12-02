@@ -8,7 +8,7 @@ import { UpdatePagoDto } from './dto/update-pago.dto';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Pago } from './entities/pago.entity';
 import { Repository } from 'typeorm';
-import { Pedido } from 'src/pedidos/entities/pedido.entity';
+import { Pedido } from '../pedidos/entities/pedido.entity';
 
 @Injectable()
 export class PagosService {

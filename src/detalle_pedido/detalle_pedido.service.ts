@@ -7,9 +7,9 @@ import {
 import { CreateDetallePedidoDto } from './dto/create-detalle_pedido.dto';
 import { UpdateDetallePedidoDto } from './dto/update-detalle_pedido.dto';
 import { InjectRepository } from '@nestjs/typeorm';
-import { Pedido } from 'src/pedidos/entities/pedido.entity';
+import { Pedido } from '../pedidos/entities/pedido.entity';
 import { Repository } from 'typeorm';
-import { Pizza } from 'src/pizzas/entities/pizza.entity';
+import { Pizza } from '../pizzas/entities/pizza.entity';
 import { NotFoundError } from 'rxjs';
 import { DetallePedido } from './entities/detalle_pedido.entity';
 

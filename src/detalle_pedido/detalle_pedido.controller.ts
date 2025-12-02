@@ -10,7 +10,7 @@ import {
 import { DetallePedidoService } from './detalle_pedido.service';
 import { CreateDetallePedidoDto } from './dto/create-detalle_pedido.dto';
 import { UpdateDetallePedidoDto } from './dto/update-detalle_pedido.dto';
-import { Pizza } from 'src/pizzas/entities/pizza.entity';
+import { Pizza } from '../pizzas/entities/pizza.entity';
 
 @Controller('detalle-pedido')
 export class DetallePedidoController {

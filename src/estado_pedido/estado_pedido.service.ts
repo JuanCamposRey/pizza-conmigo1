@@ -6,7 +6,7 @@ import {
 import { CreateEstadoPedidoDto } from './dto/create-estado_pedido.dto';
 import { UpdateEstadoPedidoDto } from './dto/update-estado_pedido.dto';
 import { InjectRepository } from '@nestjs/typeorm';
-import { Pedido } from 'src/pedidos/entities/pedido.entity';
+import { Pedido } from '../pedidos/entities/pedido.entity';
 import { Repository } from 'typeorm';
 import { EstadoPedido } from './entities/estado_pedido.entity';
 
