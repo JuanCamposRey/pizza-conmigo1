@@ -22,7 +22,7 @@ import { PersonalizarPizzasModule } from './personalizar-pizzas/personalizar-piz
       "password": process.env.MYSQL_PASSWORD,
       "database": process.env.MYSQL_DB,
       "entities":[__dirname + '/**/*.entity{.ts,.js}'],
-      "synchronize": true,
+      "synchronize": true
     }),
     PedidosModule,
     PagosModule,
