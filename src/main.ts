@@ -12,7 +12,7 @@ async function bootstrap() {
   app.enableCors({
     origin: ["https://pizza-conmigo1.onrender.com",
       "http://localhost:3000"], 
-      METHODS: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+      methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
       credentials:false,
   });
   app.useGlobalPipes(
