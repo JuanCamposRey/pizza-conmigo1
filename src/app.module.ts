@@ -23,9 +23,7 @@ import { PersonalizarPizzasModule } from './personalizar-pizzas/personalizar-piz
       "database": process.env.MYSQL_DB,
       "entities":[__dirname + '/**/*.entity{.ts,.js}'],
       "synchronize": true,
-      extra: {
-    connectionLimit: 3, // deja libres 2 conexiones para clientes externos
-  },
+      
 
     }),
     PedidosModule,
