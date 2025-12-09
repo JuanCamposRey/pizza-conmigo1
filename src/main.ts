@@ -10,10 +10,8 @@ async function bootstrap() {
   
 
   app.enableCors({
-    origin: ["https://pizza-conmigo1.onrender.com",
-      "http://localhost:3000",
-    "https://pizza-conmigo.web.app/"
-  ], 
+    origin: "*"
+  , 
       methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
       credentials:true,
   });
