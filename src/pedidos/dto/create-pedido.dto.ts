@@ -17,4 +17,15 @@ export class CreatePedidoDto extends CreateClienteDto {
   @IsDate()
   @Type(() => Date)
   fecha_pedido: Date;
+
+  @IsNotEmpty()
+@IsNumber()
+cliente_id: number;
+
+@IsString()
+forma_envio: string;
+
+@IsString()
+medio_pago: string;
+
 }
