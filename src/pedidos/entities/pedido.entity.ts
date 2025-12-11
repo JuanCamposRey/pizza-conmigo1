@@ -10,6 +10,7 @@ import {
   PrimaryGeneratedColumn,
   OneToOne,
   OneToMany,
+  CreateDateColumn,
 } from 'typeorm';
 
 @Entity()
@@ -26,9 +27,11 @@ export class Pedido {
 
   @Column()
   cantidad: number;
-
-  @Column('timestamp')
+  @CreateDateColumn({ type: 'timestamp' })
   fecha: Date;
+
+
+
 
   @ManyToOne(() => Cliente, (cliente) => cliente.pedido)
   @JoinColumn()
