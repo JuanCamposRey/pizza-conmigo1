@@ -10,7 +10,7 @@ async function bootstrap() {
   
 
   app.enableCors({
-    origin: ["pizza-conmigo1-production.up.railway.app",
+    origin: ["https://pizza-conmigo1-production.up.railway.app/",
       "http://localhost:3000",
     "https://pizza-conmigo.web.app"
   ], 
