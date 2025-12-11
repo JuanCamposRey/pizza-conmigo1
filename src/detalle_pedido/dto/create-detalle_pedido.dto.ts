@@ -1,16 +1,15 @@
-import { IsInt, IsNotEmpty, IsNumber, Min } from 'class-validator';
-
+import { IsInt, IsNotEmpty, IsNumber, Min, IsOptional } from 'class-validator';
 export class CreateDetallePedidoDto {
   @IsNotEmpty()
   @IsNumber()
-  id_pizza: number;
-
+  pedidoId: number;
   @IsNotEmpty()
   @IsNumber()
-  id_pedido: number;
-
-  //es para garantizar que el numero siempre sea entero.
+  pizzaId: number;
   @IsInt()
   @Min(1)
   cantidad: number;
+  @IsOptional()
+  @IsNumber()
+  pizzaPersonalizadaId?: number;
 }
