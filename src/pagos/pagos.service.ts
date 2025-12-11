@@ -22,7 +22,7 @@ export class PagosService {
   async create(createPagoDto: CreatePagoDto, fecha: Date): Promise<Pago> {
     try {
       const nuevoPedido = await this.pedidoRepository.findOne({
-        where: { fecha_pedido:fecha },
+        where: { fecha},
       }); //aca pongo el id de Pedido
       if (!nuevoPedido) {
         console.error('no existe el pedido');

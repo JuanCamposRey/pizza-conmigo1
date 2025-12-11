@@ -28,10 +28,10 @@ export class Pedido {
   cantidad: number;
 
   @Column('timestamp')
-  fecha_pedido: Date;
+  fecha: Date;
 
   @ManyToOne(() => Cliente, (cliente) => cliente.pedido)
-  @JoinColumn({ name: 'cliente_id' })
+  @JoinColumn()
   cliente: Cliente;
 
   @OneToOne(() => Pago, (pago) => pago.pedido)

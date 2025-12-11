@@ -8,7 +8,7 @@ export class CreatePedidoDto extends CreateClienteDto {
 
   @IsNotEmpty()
   @IsString()
-  direccion_envio: string;
+  direccion_pedido: string;
 
   @IsNotEmpty()
   @IsNumber()
@@ -17,11 +17,4 @@ export class CreatePedidoDto extends CreateClienteDto {
   @IsDate()
   @Type(() => Date)
   fecha_pedido: Date;
-  
-  @IsNotEmpty()
-  @IsNumber()
-  cliente_id: number;
-
-
-  
 }
