@@ -31,7 +31,7 @@ export class Pedido {
   fecha_pedido: Date;
 
   @ManyToOne(() => Cliente, (cliente) => cliente.pedido)
-  @JoinColumn()
+  @JoinColumn({ name: 'cliente_id' })
   cliente: Cliente;
 
   @OneToOne(() => Pago, (pago) => pago.pedido)
