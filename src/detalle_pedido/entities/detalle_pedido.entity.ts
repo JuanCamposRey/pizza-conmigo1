@@ -20,6 +20,6 @@ export class DetallePedido {
   @Column()
   cantidad: number;
  @Column('int', { name: 'pizza_personalizada_id', nullable: true })
-  pizzaPersonalizadaId: number;
+  pizzaPersonalizadaId: number | null;
   
 }
