@@ -19,9 +19,9 @@ export class DetallePedidoController {
   @Post()
   create(
     @Body() createDetallePedidoDto: CreateDetallePedidoDto,
-    
+    @Body('pizza') pizza: Pizza,
   ) {
-    return this.detallePedidoService.create(createDetallePedidoDto);
+    return this.detallePedidoService.create(createDetallePedidoDto, pizza);
   }
 
   @Get()
